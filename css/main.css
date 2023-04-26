@@ -1,0 +1,273 @@
+/* /////////////////// */ 
+/* general style START */
+/* /////////////////// */
+
+/*
+@font-face {
+  font-family:maple-web;
+  font-style:normal;font-weight:900;
+}
+@font-face {
+  font-family:maple-web-second;
+  font-style:normal;font-weight:700;
+}
+*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #212121;
+}
+/* padded section */
+.pad-section {
+  padding: 40px 50px 40px 50px;
+}
+h1, h2, h3, p {
+  color: white;
+}
+p {
+  text-align: justify;
+  font-family: Montserrat;
+  font-size: 1rem;
+}
+.font-main {
+  font-family: maple-web;
+  font-size: 3rem;
+}
+.font-laf {
+  font-family: maple-web;
+  font-size: 1.5rem;
+}
+i {
+  color: #212121;
+  font-size: 3.5rem!important;
+  padding: 25px;
+}
+a {
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: #D2BB7C;
+}
+.container {
+  max-width: none;
+}
+i:hover {
+  color: white;
+  -webkit-transition: all 0.8s ease;                  
+  -moz-transition: all 0.8s ease;                 
+  -o-transition: all 0.8s ease;   
+  -ms-transition: all 0.8s ease;          
+  transition: all 0.8s ease;
+}
+/* ///////////////// */ 
+/* general style END */
+/* ///////////////// */ 
+
+/* Navbar start */
+.navbar-toggler {
+  border: none;
+}
+#navbar-brand {
+  padding: 0;
+}
+#nav-background {
+  background-color: transparent!important;
+}
+.nav-item {
+  font-family: maple-web;
+  color: white!important;
+  font-weight: 900!important;
+}
+/* Navbar end */
+/* additional sections */ 
+/* Layer start */
+.layer {
+  background-color: rgba(32, 32, 32, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* Layer end */
+/* Home start */
+#home {
+  background: url(../images/main.jpg) no-repeat center center;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text-main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.text-main h1 {
+  font-family: maple-web;
+  font-size: 5rem;
+}
+.text-main-consistent {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.text-main-consistent h1 {
+  font-family: maple-web;
+}
+#mobile-header {
+  display: none;
+}
+/* Home end */
+/* About start */
+#about {
+  background-color: #212121;
+}
+#about-text {
+  height: 400px;
+  background: linear-gradient(to bottom right, #dbc896, #D2BB7C);
+}
+#about-paragraph {
+  max-width: 900px;
+}
+#img-about-sec {
+  background: url(../images/secondary.jpg) no-repeat center center;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#hashtag-text {
+  display: none;
+}
+.social-icon {
+  font-size: 1rem;
+}
+/* About end */
+/* Menu start */
+.btn-outline-light {
+  border-radius: 0!important;
+}
+.btn-dark {
+  border-radius: 0!important;
+}
+#booking {
+  background-color: #D2BB7C;
+}
+/* Menu end */
+/* Contact start */
+#contact {
+  background-color: #212121;
+}
+#map {
+  height: 100%;
+  width: 100%;
+ }
+ #contact-container p {
+   font-size: 1.0rem;
+ }
+/* Contact end */
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 1500px) { 
+  .text-main h1 {
+    font-size: 3rem;
+  }
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .text-main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  #desktop-header {
+    display: none;
+  }
+  #mobile-header {
+    display: block;
+  }
+  .text-main h1 {
+    font-family: maple-web;
+    font-size: 1.8rem;
+  }
+  #about-text {
+    height: 200px;
+  }
+  #map {
+    height: 280px;
+   }
+   p {
+    font-size: 0.8rem;
+  }
+  #contact-container p {
+    font-size: 0.8rem;
+  }
+  #hashtag-text {
+    display: block;
+    font-size: 1.2rem;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari 3-8 */
+    transform: rotate(7deg);
+    color: #212121;
+    font-family: maple-web-second;
+  }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .font-main {
+    font-size: 1.6rem;
+  }
+  .font-laf {
+    font-size: 1.4rem;
+  }
+  .pad-section {
+    padding: 40px 15px 40px 15px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .lead {
+    font-size: 0.9rem;
+  }
+  .mobile-info p, h2 {
+    text-align: center;
+  }
+  #about-text {
+    height: 150px;
+  }
+  #img-about-sec {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1150px) { 
+  i {
+    color: #212121;
+    font-size: 6rem!important;
+    padding: 30px;
+  }
+}
